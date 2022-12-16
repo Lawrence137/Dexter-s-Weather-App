@@ -1,0 +1,9 @@
+#nav {
+    display: flex; /* Display the navbar as a flex container */
+      justify-content: space-between; /* Align the items within the navbar horizontally */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Display the list items as inline-block elements */
+    margin-left: 20px; /* Add some space between the items */
+  }
