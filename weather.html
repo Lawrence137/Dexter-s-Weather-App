@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="weather.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to the Dexter's Weather App</h1>
+        <h1>Welcome to Dexter's Weather App</h1>
       </header>
-      <nav id="navbar">
+    <nav id="navbar">
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#screenshots">Screenshots</a></li>
@@ -24,7 +24,18 @@
           <li><a href="#login-form" id="login-link">Login</a></li>
           <li><a href="#Signup-form" id="signup-link">Sign up</a></li>
         </ul>
-      </nav>
+    </nav>
+
+    <div class="login-container">
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+    </div>
+    
 <script src="weather.js"></script>    
 </body>
 </html>
