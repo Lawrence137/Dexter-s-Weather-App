@@ -6,6 +6,11 @@ header h1 {
   padding: 20px 0;
 }
 
+h2 {
+  color: rgb(83, 83, 227);
+  font-style: italic;
+}
+
 #navbar {
   background-color: rgb(0, 26, 255);
   display: flex;
@@ -37,7 +42,6 @@ header h1 {
 
   body {
     font-family: 'Roboto', sans-serif;
-   background-color: burlywood;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -60,14 +64,16 @@ header h1 {
 
   /* Add a background image to each slide */
 .feature-slide:nth-child(3) {
-  background-image: url('lightning.jpg');
+  background-image: url('rainyy.jpg');
 }
 .feature-slide:nth-child(2) {
+  background-color: #333;
   background-image: url('icons.jpg');
+  
 }
 
 .slide-1 .slide-text {
-  color: rgb(50, 180, 176);
+  color: rgb(47, 32, 218);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-style: italic;
@@ -221,7 +227,7 @@ header h1 {
   border: none;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
+  color: rgb(16, 10, 10);
   font-size: 16px;
   margin-bottom: 20px;
 }

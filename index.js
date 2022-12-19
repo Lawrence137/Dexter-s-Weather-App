@@ -93,7 +93,7 @@ document.getElementById('login-link').addEventListener('click', function(event) 
     slides[currentSlide].style.display = 'block';
   }
   
-  setInterval(showSlide, 2000); // change slide every 2 seconds
+  setInterval(showSlide, 4000); // change slide every 4 seconds
 
 // Get elements to display weather information
 const api = '6cfda788a2523a0448bdaf91c4c01eae';
