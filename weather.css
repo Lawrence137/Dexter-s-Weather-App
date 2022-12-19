@@ -57,3 +57,11 @@ header h1 {
     border: 1px solid black; /* optional border */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* optional box shadow */
   }
+
+  /* Add a background image to each slide */
+.feature-slide:nth-child(3) {
+  background-image: url('icons2.jpg');
+}
+.feature-slide:nth-child(2) {
+  background-image: url('icons.jpg');
+}
