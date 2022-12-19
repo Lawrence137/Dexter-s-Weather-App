@@ -45,7 +45,7 @@ document.getElementById('login-link').addEventListener('click', function(event) 
     document.querySelector('.signup-container').style.display = 'block';
     document.querySelector('main').style.display = 'none';
   });
-  
+
 //slideshow
   let currentSlide = 0;
   const slides = document.querySelectorAll('.feature-slide');
@@ -67,3 +67,19 @@ const tempF = document.getElementById('weather');
 const desc = document.querySelector('.desc');
 const sunriseDOM = document.querySelector('.sunrise');
 const sunsetDOM = document.querySelector('.sunset');
+
+window.addEventListener('load', () => {
+  let long;
+  let lat;
+
+  //Accessing Geolocation of User
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      // Storing Longitude and Latitude in variables
+      long = position.coords.longitude;
+      lat = position.coords.latitude;
+      const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
+
+      document.getElementById("weather-search-form").addEventListener("submit", function(event) {
+        // Prevent the form from submitting and refreshing the page
+        event.preventDefault();
