@@ -117,3 +117,89 @@ header h1 {
   font-weight: 700;
   cursor: pointer;
 }
+
+.login-container, main {
+  display: none;
+}
+
+.signup-container, main {
+  display: none;
+}
+
+#error-message {
+  font-size: 16px;
+  color: red;
+  margin-top: 10px;
+}
+
+#weather-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#location {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+}
+
+#temperature {
+  font-size: 48px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e50914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#weather {
+  font-size: 18px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.info h4 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.info .sunrise,
+.info .sunset {
+  font-weight: 700;
+  color: #e50914;
+}
