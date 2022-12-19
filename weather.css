@@ -23,6 +23,8 @@ header h1 {
 #navbar li a:hover {
   background-color: #111;
 }
+
+
   
   nav ul li {
     display: inline-block; /* Display the list items as inline-block elements */
