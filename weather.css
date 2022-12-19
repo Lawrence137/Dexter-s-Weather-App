@@ -41,3 +41,19 @@ header h1 {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .slideshow-container {
+    height: 600px;
+    width: 100%;
+  }
+  
+  .feature-slide {
+    display: none;
+    transition: all 0.5s ease-in-out;
+    height: 500px; /* adjust the height as needed */
+    width: 100%; /* adjust the width as needed */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black; /* optional border */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* optional box shadow */
+  }
