@@ -136,3 +136,18 @@ window.addEventListener('load', () => {
           tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
           sunriseDOM.textContent = `${sunriseGMT.toLocaleDateString()}, ${sunriseGMT.toLocaleTimeString()}`;
           sunsetDOM.textContent = `${sunsetGMT.toLocaleDateString()}, ${sunsetGMT.toLocaleTimeString()}`;
+
+          // Update background color based on weather conditions
+          const body = document.querySelector('body');
+          if (description.includes('clear')) {
+            body.style.backgroundColor = '#f1e3cb';
+          } else if (description.includes('clouds')) {
+            body.style.backgroundColor = '#d3d3d3';
+          } else if (description.includes('rain')) {
+              body.style.backgroundColor = '#b8dcfb';
+            }
+        });
+    });
+  }
+});
+``
