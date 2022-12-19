@@ -83,3 +83,29 @@ window.addEventListener('load', () => {
       document.getElementById("weather-search-form").addEventListener("submit", function(event) {
         // Prevent the form from submitting and refreshing the page
         event.preventDefault();
+        // Get the location entered by the user
+        const location = document.getElementById("geoLocation").value;
+      
+        // Call the OpenWeatherMap API to get the weather for the entered location
+        const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${api}`;
+        fetch(weatherApiUrl)
+          .then(function(response) {
+            // Check if the response was successful
+            if (!response.ok) {
+              throw new Error(`Error getting weather data for ${location}: ${response.status} ${response.statusText}`);
+            }
+            return response.json();
+          })
+          .then(function(weatherData) {
+            const temperature = Math.round(weatherData.main.temp - 273.15);
+            const weatherDescription = weatherData.weather[0].description;
+      
+            // Update the page to display the current temperature and weather conditions
+            document.getElementById("temperature").innerHTML = temperature + "°C";
+            document.getElementById("weather").innerHTML = weatherDescription;
+          })
+          .catch(function(error) {
+            // Handle any errors that occurred
+            console.error(error);
+          });
+      });
