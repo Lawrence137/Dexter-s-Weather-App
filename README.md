@@ -3,7 +3,9 @@
 This is a simple weather App that has been built using the following languages:
 
    -HTML
+   
    -CSS
+
    JAVASCRIPT
 
 API used:
