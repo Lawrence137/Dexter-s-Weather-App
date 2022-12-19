@@ -1,6 +1,18 @@
 # Dexter-s-Weather-App
 
+This is a simple weather App that has been built using the following languages:
+
+   -HTML
+   -CSS
+   JAVASCRIPT
+
+API used:
+
+   -OpenWeatherMap
+
 # MVP/Deliverables
+
+
 As a user, I can;
 
 -See the weather in my current region.
