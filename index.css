@@ -37,7 +37,7 @@ header h1 {
 
   body {
     font-family: 'Roboto', sans-serif;
-    background-image: url();
+   background-color: burlywood;
     background-size: cover;
     background-repeat: no-repeat;
   }
