@@ -237,3 +237,44 @@ header h1 {
   font-weight: 700;
   cursor: pointer;
 }
+
+form#comment-form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style the label and textarea */
+form#comment-form label,
+form#comment-form textarea {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the textarea */
+form#comment-form textarea {
+  height: 150px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Style the button */
+form#comment-form button {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
