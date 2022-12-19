@@ -65,3 +65,17 @@ header h1 {
 .feature-slide:nth-child(2) {
   background-image: url('icons.jpg');
 }
+
+.slide-1 .slide-text {
+  color: rgb(50, 180, 176);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.slide-2 .slide-text {
+  color: rgb(2, 0, 10);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+}
