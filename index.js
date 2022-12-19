@@ -161,7 +161,7 @@ window.addEventListener('load', () => {
           const { description, icon } = data.weather[0];
           const { sunrise, sunset } = data.sys;
 
-          const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+          const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
           const fahrenheit = (temp * 9) / 5 + 32;
 
           // Converting Epoch(Unix) time to GMT
