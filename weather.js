@@ -45,8 +45,20 @@ document.getElementById('login-link').addEventListener('click', function(event) 
     document.querySelector('.signup-container').style.display = 'block';
     document.querySelector('main').style.display = 'none';
   });
+  
+//slideshow
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.feature-slide');
+  
+  function showSlide() {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.display = 'block';
+  }
+  
+  setInterval(showSlide, 2000); // change slide every 2 seconds
 
-  // OpenWeatherMap API. Do not share it publicly.
+
 const api = '6cfda788a2523a0448bdaf91c4c01eae';
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
