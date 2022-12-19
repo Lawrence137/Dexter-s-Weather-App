@@ -278,3 +278,43 @@ form#comment-form button {
   font-family: Arial, sans-serif;
   cursor: pointer;
 }
+
+.signup-container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style the labels and inputs */
+.signup-container label,
+.signup-container input {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the inputs */
+.signup-container input {
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* Style the button */
+.signup-container button {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
