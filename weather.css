@@ -1,9 +1,31 @@
-#nav {
-    display: flex; /* Display the navbar as a flex container */
-      justify-content: space-between; /* Align the items within the navbar horizontally */
-  }
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(49, 35, 243);
+  margin: 0;
+  padding: 20px 0;
+}
+
+#navbar {
+  background-color: rgb(0, 26, 255);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  line-height: 80px;
+}
   
   nav ul li {
     display: inline-block; /* Display the list items as inline-block elements */
     margin-left: 20px; /* Add some space between the items */
+  }
+
+  header {
+    text-align: center;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
   }
