@@ -13,10 +13,20 @@ header h1 {
   height: 80px;
   line-height: 80px;
 }
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+}
   
   nav ul li {
     display: inline-block; /* Display the list items as inline-block elements */
-    margin-left: 20px; /* Add some space between the items */
+    margin-left: 100px; /* Add some space between the items */
   }
 
   header {
