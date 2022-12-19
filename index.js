@@ -169,7 +169,7 @@ window.addEventListener('load', () => {
           const sunsetGMT = new Date(sunset * 1000)
 
           // Interacting with DOM to show data
-          iconImg.src = iconUrl;
+          //iconImg.src = iconUrl;
           loc.textContent = `${place}`;
           desc.textContent = `${description}`;
           tempC.textContent = `${temp.toFixed(2)} °C`;

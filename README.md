@@ -77,3 +77,10 @@ Once logged in you should see the temperature and weather condition of your area
 
 To search for a specific place's weather, simply input the name of the city and the details should be displayed ABOVE the search input field.
 
+# Authors
+
+This project was contributed to by;
+
+     -Lawrence Kimani
+
+
