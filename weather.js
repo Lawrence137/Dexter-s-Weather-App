@@ -109,3 +109,17 @@ window.addEventListener('load', () => {
             console.error(error);
           });
       });
+
+      // Using fetch to get data
+      fetch(base)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          const { temp } = data.main;
+          const place = data.name;
+          const { description, icon } = data.weather[0];
+          const { sunrise, sunset } = data.sys;
+
+          const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+          const fahrenheit = (temp * 9) / 5 + 32;
