@@ -1,20 +1,24 @@
+// Add an event listener to the login link to show the login form and hide the main content
 document.getElementById('login-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the link from being followed
+    // Display the login container and hide the main content
     document.querySelector('.login-container').style.display = 'block';
     document.querySelector('main').style.display = 'none';
   });
 
+// Create an array of valid credentials
   const validCredentials = [
     { username: 'user1', password: 'pass1' },
     { username: 'user2', password: 'pass2' },
   ]
     
   
-  
+  // Get the login form and error message elements
   const loginForm = document.getElementById('login-form');
   const errorMessage = document.getElementById('error-message');
   const weatherApp = document.getElementById('weather-app');
-  
+
+  // Add an event listener to the login form to handle form submissions
   loginForm.addEventListener('submit', (event) => {
     // Prevent the form from submitting and refreshing the page
     event.preventDefault();
@@ -40,6 +44,7 @@ document.getElementById('login-link').addEventListener('click', function(event) 
   
   });
 
+// Define a function to hide all sections except the main content
   function hideSections() {
     document.getElementById("features").style.display = "none";
     document.getElementById("pricing").style.display = "none";
@@ -48,25 +53,29 @@ document.getElementById('login-link').addEventListener('click', function(event) 
     document.getElementById("signup-link").style.display = "none";
   }
 
+// Add an event listener to the signup link to show the signup form and hide the main content
   document.getElementById('signup-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the link from being followed
     document.querySelector('.signup-container').style.display = 'block';
     document.querySelector('main').style.display = 'none';
   });
 
-//slideshow
+// Set up a slideshow of feature slides
   let currentSlide = 0;
   const slides = document.querySelectorAll('.feature-slide');
-  
+  // Define a function to show the next slide
   function showSlide() {
+    // Hide the current slide
     slides[currentSlide].style.display = 'none';
+    // Increment the current slide index and reset it to 0 if it exceeds the number of slides
     currentSlide = (currentSlide + 1) % slides.length;
+    // Show the next slide
     slides[currentSlide].style.display = 'block';
   }
   
   setInterval(showSlide, 2000); // change slide every 2 seconds
 
-
+// Get elements to display weather information
 const api = '6cfda788a2523a0448bdaf91c4c01eae';
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
@@ -76,18 +85,21 @@ const desc = document.querySelector('.desc');
 const sunriseDOM = document.querySelector('.sunrise');
 const sunsetDOM = document.querySelector('.sunset');
 
+// Add an event listener to the window to get the user's current location when the page loads
 window.addEventListener('load', () => {
   let long;
   let lat;
 
   //Accessing Geolocation of User
+  // Check if the browser supports geolocation
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {
+    navigator.geolocation.getCurrentPosition((position) => {  // Get the user's current position
       // Storing Longitude and Latitude in variables
       long = position.coords.longitude;
       lat = position.coords.latitude;
+      // Construct the URL for the weather API with the user's location
       const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
-
+     // Add an event listener to the weather search form to handle form submissions
       document.getElementById("weather-search-form").addEventListener("submit", function(event) {
         // Prevent the form from submitting and refreshing the page
         event.preventDefault();
