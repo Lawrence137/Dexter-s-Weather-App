@@ -40,6 +40,14 @@ document.getElementById('login-link').addEventListener('click', function(event) 
   
   });
 
+  function hideSections() {
+    document.getElementById("features").style.display = "none";
+    document.getElementById("pricing").style.display = "none";
+    document.getElementById("testimonials").style.display = "none";
+    document.getElementById("screenshots").style.display = "none";
+    document.getElementById("signup-link").style.display = "none";
+  }
+
   document.getElementById('signup-link').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the link from being followed
     document.querySelector('.signup-container').style.display = 'block';
