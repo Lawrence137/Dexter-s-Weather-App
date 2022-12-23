@@ -324,3 +324,8 @@ form#comment-form button {
   font-family: Arial, sans-serif;
   cursor: pointer;
 }
+
+p {
+  text-align: center;
+  font-weight: 100px;
+}
